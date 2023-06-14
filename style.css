@@ -35,7 +35,7 @@ header {
 .header-links{
     list-style: none;
     display: flex;
-    gap: 2em;
+    gap: 2 em;
 }
 
 .header-links a{
