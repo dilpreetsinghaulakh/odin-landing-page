@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
 
 :root {
   --accent-color: #3882f6;
-  --dark-background-color: #1f2937;
+  --dark-color: #1f2937;
   --light-text: #F9FAF8;
   --secondary-accent-color: #E5E7EB;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-color);
   width: 100%;
   top: 0;
   position: absolute;
@@ -48,10 +48,8 @@ header {
 }
 
 .hero{
-  /* height: 60vh; */
   width: 100%;
-  background-color: var(--dark-background-color);
-  /* margin-top: calc(3 * 24px); */
+  background-color: var(--dark-color);
 }
 
 .hero-content{
@@ -60,13 +58,13 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding-block: 10em;
+  padding-block: 9em;
   height: 100%;
   gap: 4em;
 }
 
 .hero-left{
-  padding: 1em;
+  padding: 1.5em;
   padding-left: 0;
 }
 
@@ -89,8 +87,9 @@ header {
   text-decoration: none;
   background-color: var(--accent-color);
   color: #fff;
-  padding: 0.75em 2.5em;
-  font-weight: 900;
+  padding: 0.5em 2em;
+  font-weight: 500;
+  font-size: 18px;
   border-radius: 7px;
 }
 
@@ -101,5 +100,56 @@ header {
   align-items: center;
   background-color: #6e747c;
   color: #fff;
+  font-size: 20px;
 }
 
+.information{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 13em;
+  padding-bottom: 5em;
+}
+
+.information h1{
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--dark-color);
+  margin-block: 1.5em;
+}
+
+.information-content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5em;
+  margin-inline: 6em;
+  text-align: center;
+  color: #6e747c;
+  font-size: 18px;
+}
+
+.blank{
+  width: 100%;
+  aspect-ratio: 1;
+  border: var(--accent-color) 5px solid;
+  border-radius: 20px;
+}
+
+.quote{
+  background-color: var(--secondary-accent-color);
+  padding: 7em 20em;
+  color: var(--dark-color);
+}
+
+.quote h1{
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.quote p{
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+  margin-top: 0;
+}
