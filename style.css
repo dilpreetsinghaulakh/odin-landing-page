@@ -180,5 +180,16 @@ header {
 }
 
 .call-to-action .button{
+  color: #fff;
   border: #fff 2px solid;
+}
+
+footer{
+  background-color: var(--dark-color);
+  color: var(--secondary-accent-color);
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  padding: 1em;
+  text-align: center;
 }
