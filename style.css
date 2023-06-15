@@ -85,12 +85,15 @@ header {
 
 .button{
   text-decoration: none;
-  background-color: var(--accent-color);
-  color: #fff;
-  padding: 0.5em 2em;
+  padding: 0.4em 2em;
   font-weight: 500;
   font-size: 18px;
   border-radius: 7px;
+}
+
+.hero-left .button{
+  background-color: var(--accent-color);
+  color: #fff;
 }
 
 .hero-right{
@@ -152,4 +155,30 @@ header {
   font-size: 24px;
   text-align: right;
   margin-top: 0;
+}
+
+.call-to-action{
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 10px;
+  margin: 6em 15em;
+  padding: 3em 8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.call-to-action h1{
+  font-size: 24px;
+  margin: 0;
+}
+
+.call-to-action p{
+  margin: 0;
+  color: var(--secondary-accent-color);
+  font-size: 18px;
+}
+
+.call-to-action .button{
+  border: #fff 2px solid;
 }
