@@ -3,6 +3,8 @@
 :root {
   --accent-color: #3882f6;
   --dark-background-color: #1f2937;
+  --light-text: #F9FAF8;
+  --secondary-accent-color: #E5E7EB;
 }
 
 body {
@@ -14,20 +16,20 @@ body {
 header {
   background-color: var(--dark-background-color);
   width: 100%;
-  margin-top: 0;
-  position: fixed;
+  top: 0;
+  position: absolute;
 }
 
 .inner-header {
   display: flex;
   flex-direction: row;
-  margin-inline: 10em;
+  margin-inline: 13em;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-logo{
-    color: #F9FAF8;
+    color: var(--light-text);
     font-weight: 900;
     font-size: 24px;
 }
@@ -35,12 +37,69 @@ header {
 .header-links{
     list-style: none;
     display: flex;
-    gap: 2 em;
+    gap: 2em;
 }
 
 .header-links a{
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--secondary-accent-color);
     font-size: 18px;
     font-weight: 300;
 }
+
+.hero{
+  /* height: 60vh; */
+  width: 100%;
+  background-color: var(--dark-background-color);
+  /* margin-top: calc(3 * 24px); */
+}
+
+.hero-content{
+  display: flex;
+  margin-inline: 13em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding-block: 10em;
+  height: 100%;
+  gap: 4em;
+}
+
+.hero-left{
+  padding: 1em;
+  padding-left: 0;
+}
+
+.hero-left h1{
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--light-text);
+  margin: 0;
+}
+
+.hero-left p{
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secondary-accent-color);
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.button{
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.75em 2.5em;
+  font-weight: 900;
+  border-radius: 7px;
+}
+
+.hero-right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e747c;
+  color: #fff;
+}
+
